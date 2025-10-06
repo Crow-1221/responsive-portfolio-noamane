@@ -3,3 +3,5 @@ let sidebar = document.querySelector('.sidebar')
 hamburger.addEventListener("click", () => {
     sidebar.classList.toggle("active")
 })
+
+console.log(window.innerWidth)

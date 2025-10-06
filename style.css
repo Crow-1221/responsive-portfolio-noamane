@@ -1,35 +1,22 @@
+/* main font size */
 html {
     font-size: 62.5%;
 }
+/* body styles */
+body {
+    overflow-x: hidden;
+}
+/* designer photo */
 .navbar .logo .photo-designer {
         width: 5rem;
         height: 5rem;
         border-radius: 100px;
 }
-.sidebar {
-    display: block;
-    position: fixed; /* fixed أفضل */
-    top: 0;
-    right: 0;
-    width: 70%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.85); /* شفافية أنعم */
-    border-radius: 20px 0 0 20px; /* فقط على الجانب المفتوح */
-    z-index: 999;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+.navbar .container-nav {
+    width: 54%;
 }
-.sidebar.active {
-    transform: translateX(0);
-}
-.sidebar .nav-list {
-    flex-direction: column !important;
-}
-.sidebar .nav-link {
-    color: white;
-    font-size: 2rem;
-    padding: 2rem;
-    margin-left: 2rem;
+.navbar .container-nav ul {
+    justify-content: space-evenly;
 }
 .hamburger-parent {
     display: none;
@@ -62,4 +49,61 @@ html {
     background-color: black !important;
     margin: 0.3rem 0;
     border-radius: 5px;
+}
+.sidebar {
+    display: block;
+    position: fixed; /* fixed أفضل */
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.85); /* شفافية أنعم */
+    border-radius: 20px 0 0 20px; /* فقط على الجانب المفتوح */
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.sidebar.active {
+    transform: translateX(0);
+}
+.sidebar .nav-list {
+    flex-direction: column !important;
+}
+.sidebar .nav-link {
+    color: #aaa;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-left: 2rem;
+}
+.sidebar .nav-link:hover {
+    color: white;
+}
+.services .services-title {
+    font-size: 3rem !important;
+    margin-bottom: 6.5rem!important;
+}
+.services .service-box {
+    width: 100%;
+}
+.services a {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+}
+.services a * {
+    font-size: 2rem;
+}
+.contact .contact-inner {
+    gap: 4rem;
+}
+@media (max-width: 767px) {
+    .contact .contact-inner {
+        gap: 0;
+    }
+}
+.contact .info-contact{
+    width: 100%;
+    font-size: 1.8rem;
 }
