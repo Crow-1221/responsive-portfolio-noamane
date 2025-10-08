@@ -106,13 +106,8 @@ body {
     border-bottom: solid black;
     margin: auto;
 }
-/* .designgraphy img {
-    width: 20rem ;
-    height: 30rem ;
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 50%;
-    max-height: 50%;
+/* .container-videos div{
+    width: fit-content;
 } */
 .contact .contact-inner {
     gap: 4rem;
@@ -124,8 +119,64 @@ body {
 }
 .contact .info-contact{
     width: 100%;
+    min-width: 30rem;
     font-size: 1.8rem;
 }
+:root {
+    --back-gd-parent: white;
+    --color-child-wa: green;
+    --color-child-fa: blue;
+    --color-child-in: purple;
+    --color-child-em: black;
+}
+.contact .info-contact div {
+    padding: 2rem;
+    height: 5rem;
+    border: solid;
+    border-radius: 20px;
+    transition: 0.5s;
+    transform-origin: left center;
+}
+/* .contact .info-contact h1{
+    width: 50%;
+    height: 5rem;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    font-size: 3rem;
+    cursor: pointer;
+    color: black;
+    background-color: #e19f26;
+} */
+.contact .info-contact > :nth-child(1){
+    color: green;
+}
+.contact .info-contact > :nth-child(2){
+    color: blue;
+}
+.contact .info-contact > :nth-child(3){
+    color: purple;
+}
+.contact .info-contact > :nth-child(4){
+    color: black;
+}
+.contact .info-contact > :nth-child(1):hover{
+    background-color: green;
+    color: white;
+    border: solid green;
+}
+.contact .info-contact > :nth-child(2):hover{
+    background-color: blue;
+    color: white;
+    border: solid blue;}
+.contact .info-contact > :nth-child(3):hover{
+    background-color: purple;
+    color: white;
+    border: solid purple;}
+.contact .info-contact > :nth-child(4):hover{
+    background-color: black;
+    color: white;
+    border: solid black;}
 .contact .info-contact a {
     text-decoration: none;
     color: inherit;
