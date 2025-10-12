@@ -28,7 +28,7 @@ let imgPortrait = document.querySelectorAll('.photography img.portrait')
             if (window.innerWidth >= 769) {
                 img.parentElement.classList.toggle("active")
                 if (img.parentElement.classList.contains("active")) {
-                    img.style.cssText = 'width: 40%; height: 80%'
+                    img.style.cssText = 'width: 40%; height: 90%'
                 }
                 else {
                     img.style.cssText = 'width: 100%; height: auto'
