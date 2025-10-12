@@ -11,13 +11,13 @@ let imgHome = document.querySelectorAll('.photography .container .img-home')
     Array.from(img).forEach(img => {
         img.addEventListener("click", () => {
             if (window.innerWidth >= 769) {
-            img.parentElement.classList.toggle("active")
-            if (img.parentElement.classList.contains("active")) {
-                img.style.cssText = 'width: 70%; height: auto'
-            }
-            else {
-                img.style.cssText = 'width: 100%; height: auto'
-            }
+                img.parentElement.classList.toggle("active")
+                if (img.parentElement.classList.contains("active")) {
+                    img.style.cssText = 'width: 70%; height: auto'
+                }
+                else {
+                    img.style.cssText = 'width: 100%; height: auto'
+                }
             }
         })
     })
@@ -26,13 +26,13 @@ let imgPortrait = document.querySelectorAll('.photography img.portrait')
     Array.from(imgPortrait).forEach(img => {
         img.addEventListener("click", () => {
             if (window.innerWidth >= 769) {
-            img.parentElement.classList.toggle("active")
-            if (img.parentElement.classList.contains("active")) {
-                img.style.cssText = 'width: 40%; height: 80%'
-            }
-            else {
-                img.style.cssText = 'width: 100%; height: auto'
-            }
+                img.parentElement.classList.toggle("active")
+                if (img.parentElement.classList.contains("active")) {
+                    img.style.cssText = 'width: 40%; height: 80%'
+                }
+                else {
+                    img.style.cssText = 'width: 100%; height: auto'
+                }
             }
         })
     })
@@ -123,7 +123,7 @@ window.addEventListener('load', () => {
             // د. إضافة مستمع لحدث 'blur' (فقدان التركيز) لإعادة الغطاء
             // هذا يعيد الحماية بمجرد انتهاء المستخدم من التفاعل مع الفيديو
             iframe.addEventListener('blur', () => {
-                 cover.style.display = 'block';
+                cover.style.display = 'block';
             });
         });
     });
