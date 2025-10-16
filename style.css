@@ -4,6 +4,7 @@ html {
 }
 /* body styles */
 body {
+    background-color: #eee;
     overflow-x: hidden;
 }
 /* My Frame Work */
@@ -49,7 +50,6 @@ body header {
 .nav-link.active {
     background-color: black;
     color: #e19f26 !important;
-    box-shadow: 0px 0px 2px 2px black;
 }
 .hamburger-parent {
     display: none;
@@ -127,12 +127,13 @@ body header {
     border-bottom: solid black;
     box-shadow: 0px 0px 7px 1px black;
 }
-
 .services a {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    height: 20rem;
+    width: 32%;
+    min-width: 30rem;
+    height: 50vh;
     background-color: #e19f26;
     color: black;
     border: solid 1px black;
@@ -146,11 +147,11 @@ body header {
 }
 .services a * {
     font-size: 2rem;
-    scale: 1.2;
+    scale: 1.4;
     transition: 600ms;
 }
 .services a:hover * {
-    scale: 1.4;
+    scale: 1.7;
 }
 /* Design Style */
 .designgraphy .design-home img {
