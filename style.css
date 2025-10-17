@@ -2,18 +2,22 @@
 html {
     font-size: 62.5% !important;
 }
+
 /* body styles */
 body {
     background-color: #eee;
     overflow-x: hidden;
 }
+
 /* My Frame Work */
 .w-80 {
     width: 80% !important;
 }
+
 .h-fit {
     height: fit-content;
 }
+
 /* Body Header Style */
 body header {
     position: fixed;
@@ -21,25 +25,30 @@ body header {
     left: 0;
     width: 100%;
     height: 7rem;
-    background-color: #e19f26 ;
+    background-color: #e19f26;
     z-index: 998;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 /* designer photo */
 .navbar .logo .photo-designer {
-        width: 5rem;
-        height: 5rem;
-        border-radius: 100px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100px;
 }
+
 .navbar .container-nav {
     width: 54%;
 }
+
 .navbar .container-nav ul {
     justify-content: space-evenly;
 }
+
 .navbar .container-nav ul li {
     width: 100%;
 }
+
 .nav-link {
     color: black;
     font-size: clamp(1rem, 2vw, 2rem);
@@ -47,24 +56,29 @@ body header {
     border-radius: 20px;
     transition: 1s ease-in-out;
 }
+
 .nav-link.active {
     background-color: black;
     color: #e19f26 !important;
 }
+
 .hamburger-parent {
     display: none;
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
+
 @media (max-width: 480px) {
     .hamburger-parent {
         display: flex;
     }
+
     .container-nav {
         display: none;
     }
 }
+
 .hamburger {
     cursor: pointer;
     display: flex;
@@ -75,6 +89,7 @@ body header {
     height: 3rem;
     z-index: 1001;
 }
+
 .hamburger span {
     display: block;
     width: 100%;
@@ -83,6 +98,7 @@ body header {
     margin: 0.3rem 0;
     border-radius: 5px;
 }
+
 .sidebar {
     display: block;
     position: fixed;
@@ -90,31 +106,37 @@ body header {
     right: 0;
     width: 70%;
     height: 100vh;
-    background-color: rgba(0,0,0,0.85);
-    border-radius: 20px 0 0 20px; 
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 20px 0 0 20px;
     z-index: 999;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
 }
+
 .sidebar.active {
     transform: translateX(0);
 }
-.sidebar ul{
+
+.sidebar ul {
     position: relative;
     top: 65px;
 }
+
 .sidebar .nav-list {
     flex-direction: column !important;
 }
+
 .sidebar .nav-link {
     color: #aaa;
     font-size: 2rem;
     padding: 2rem;
     margin-left: 2rem;
 }
+
 .sidebar .nav-link:hover {
     color: white;
 }
+
 /* Titles Style */
 .title {
     background: #e19f26;
@@ -127,6 +149,7 @@ body header {
     border-bottom: solid black;
     box-shadow: 0px 0px 7px 1px black;
 }
+
 .services a {
     display: flex;
     justify-content: space-evenly;
@@ -140,54 +163,63 @@ body header {
     box-shadow: 0px 0px 7px 1px black;
     transition: 500ms;
 }
+
 .services a:hover {
     background-color: black;
     color: #e19f26;
     border: solid 0 black;
 }
+
 .services a * {
     font-size: 2rem;
     scale: 1.4;
     transition: 600ms;
 }
+
 .services a:hover * {
     scale: 1.7;
 }
+
 /* Design Style */
 .designgraphy .design-home img {
     height: 100%;
 }
+
 /*  Photo Style:
     Image-Home Style When Get Active*/
 @media (min-width: 769px) {
     .photography .container .img-home.active {
-    position: fixed;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70vw;
-    height: 90vh;
-    margin: 0;
-    border-radius: 20px;
-    z-index: 10000;
-    background-color: black;
+        position: fixed;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70vw;
+        height: 90vh;
+        margin: 0;
+        border-radius: 20px;
+        z-index: 10000;
+        background-color: black;
     }
 }
+
 /* Images Style */
 .img-style {
     padding: 0.5rem;
     border: solid 0.1rem #aaa;
     cursor: pointer;
-    transition:  0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
+
 .photography .container img:hover {
     box-shadow: 0 0 2px 1px black;
 }
+
 /* Iframe Style */
 .iframe-home {
     position: relative;
     width: fit-content;
 }
+
 .videography .container-videos iframe {
     min-width: 38rem;
     height: 25rem;
@@ -195,29 +227,35 @@ body header {
     cursor: pointer;
     transition: transform 0.5s ease;
 }
+
 .iframe-home .cover {
     position: absolute;
     width: 100%;
     height: 100%;
 }
+
 /* Contact Style */
 .contact .contact-inner {
     gap: 4rem;
 }
+
 @media (max-width: 767px) {
     .contact .contact-inner {
         gap: 0;
     }
 }
-.contact .img-contact img{
+
+.contact .img-contact img {
     max-height: 42rem;
 }
-.contact .info-contact{
+
+.contact .info-contact {
     width: 100%;
     max-width: 30rem;
     min-width: 27rem;
-    font-size:initial;
+    font-size: initial;
 }
+
 :root {
     --back-gd-parent: white;
     --color-child-wa: green;
@@ -225,44 +263,69 @@ body header {
     --color-child-in: purple;
     --color-child-em: black;
 }
-.contact .info-contact div {
+
+.contact .info-contact a {
     width: 100%;
     height: 5rem;
     padding: 2rem;
     border: solid;
     border-radius: 20px;
+    font-size: clamp(1.5rem, 2vw, 2rem);
     transition: 0.5s;
-    transform-origin: left center;
 }
-.contact .info-contact > :nth-child(1){
+
+.contact .info-contact> :nth-child(1) {
+    background: linear-gradient(to left, white 50%, green 50%);
+    background-position: right;
+    background-size: 200% 100%;
     color: green;
 }
-.contact .info-contact > :nth-child(2){
+
+.contact .info-contact> :nth-child(2) {
+    background: linear-gradient(to left, white 50%, blue 50%);
+    background-position: right;
+    background-size: 200% 100%;
     color: blue;
 }
-.contact .info-contact > :nth-child(3){
+
+.contact .info-contact> :nth-child(3) {
+    background: linear-gradient(to left, white 50%, purple 50%);
+    background-position: right;
+    background-size: 200% 100%;
     color: purple;
 }
-.contact .info-contact > :nth-child(4){
+
+.contact .info-contact> :nth-child(4) {
+    background: linear-gradient(to left, white 50%, black 50%);
+    background-position: right;
+    background-size: 200% 100%;
     color: black;
 }
-.contact .info-contact > :nth-child(1):hover{
-    background-color: green;
+
+.contact .info-contact> :nth-child(1):hover {
+    background-position: left;
     color: white;
     border: solid green;
 }
-.contact .info-contact > :nth-child(2):hover{
-    background-color: blue;
+
+.contact .info-contact> :nth-child(2):hover {
+    background-position: left;
     color: white;
-    border: solid blue;}
-.contact .info-contact > :nth-child(3):hover{
-    background-color: purple;
+    border: solid blue;
+}
+
+.contact .info-contact> :nth-child(3):hover {
+    background-position: left;
     color: white;
-    border: solid purple;}
-.contact .info-contact > :nth-child(4):hover{
-    background-color: black;
+    border: solid purple;
+}
+
+.contact .info-contact> :nth-child(4):hover {
+    background-position: left;
     color: white;
-    border: solid black;}
+    border: solid black;
+}
+
 .contact .info-contact a {
     text-decoration: none;
     color: inherit;
