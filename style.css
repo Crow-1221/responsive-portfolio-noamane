@@ -237,7 +237,7 @@ a.sport {
 
 /*  Photo Style:
     Image-Home Style When Get Active*/
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .photography .container .img-home.active {
         position: fixed !important;
         top: 52% !important;
