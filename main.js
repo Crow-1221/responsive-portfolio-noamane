@@ -17,7 +17,7 @@ let img = document.querySelectorAll('.photography .container img.normal')
 let imgHome = document.querySelectorAll('.photography .container .img-home')
 Array.from(img).forEach(img => {
     img.addEventListener("click", () => {
-        if (window.innerWidth >= 769) {
+        if (window.innerWidth >= 768) {
             img.parentElement.classList.toggle("active")
             if (img.parentElement.classList.contains("active")) {
                 img.style.cssText = 'width: 70%; height: auto'
@@ -32,7 +32,7 @@ Array.from(img).forEach(img => {
 let imgPortrait = document.querySelectorAll('.photography img.portrait')
 Array.from(imgPortrait).forEach(img => {
     img.addEventListener("click", () => {
-        if (window.innerWidth >= 769) {
+        if (window.innerWidth >= 768) {
             img.parentElement.classList.toggle("active")
             if (img.parentElement.classList.contains("active")) {
                 img.style.cssText = 'width: 40%; height: 90%'
