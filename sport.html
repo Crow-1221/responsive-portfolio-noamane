@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DESIGN</title>
+    <title>SPORT</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="home-page">
+  <body class="photography-page">
     <!-- hamburger -->
     <div class="hamburger-parent">
       <div class="hamburger d-flex">
@@ -28,10 +28,10 @@
     <nav class="sidebar">
       <ul class="nav-list navbar-nav d-flex flex-row mb-0">
         <li><a href="index.html" class="nav-link px-3">Home</a></li>
+        <li><a href="designgraphy.html" class="nav-link px-3">Design</a></li>
         <li>
-          <a href="designgraphy.html" class="nav-link active px-3">Design</a>
+          <a href="photography.html" class="nav-link active px-3">Photo</a>
         </li>
-        <li><a href="photography.html" class="nav-link px-3">Photo</a></li>
         <li><a href="videography.html" class="nav-link px-3">Video</a></li>
         <li><a href="contact.html" class="nav-link px-3">Contact</a></li>
       </ul>
@@ -55,11 +55,11 @@
           <ul class="nav-list navbar-nav d-flex flex-row mb-0">
             <li><a href="index.html" class="nav-link px-3">Home</a></li>
             <li>
-              <a href="designgraphy.html" class="nav-link active px-3"
-                >Design</a
-              >
+              <a href="designgraphy.html" class="nav-link px-3">Design</a>
             </li>
-            <li><a href="photography.html" class="nav-link px-3">Photo</a></li>
+            <li>
+              <a href="photography.html" class="nav-link active px-3">Photo</a>
+            </li>
             <li><a href="videography.html" class="nav-link px-3">Video</a></li>
             <li><a href="contact.html" class="nav-link px-3">Contact</a></li>
           </ul>
@@ -67,33 +67,54 @@
       </div>
     </header>
 
-    <!-- Services Section -->
-    <section class="services container text-center my-5">
-      <h3 class="title mb-4">DESIGNS</h3>
-      <div class="services-box row gap-4 justify-content-center m-5">
-        <a
-          class="logo col-12 col-md-6 col-lg-3 btn btn-outline-primary"
-          href="logo.html"
-        >
-          <span>LOGO</span>
-        </a>
-        <a
-          class="social-media col-12 col-md-6 col-lg-3 btn btn-outline-primary"
-          href="social-media.html"
-        >
-          <span>SOCIAL MEDIA</span>
-        </a>
-        <a
-          class="print col-12 col-md-6 col-lg-3 btn btn-outline-primary"
-          href="print.html"
-        >
-          <span>PRINT</span>
-        </a>
-      </div>
-    </section>
+    <!-- Sport Section -->
+    <main class="photography">
+      <section class="our-works container my-5">
+        <h2 class="title text-center mb-4">SPORT</h2>
+        <div class="row g-3" data-masonry='{"percentPosition": true}'>
+          <div
+            class="img-home col-12 col-md-4 d-flex justify-content-center align-items-center h-fit"
+          >
+            <img
+              src="home/images/sport/DSC07398.webp"
+              alt="Photo 1"
+              class="img-fluid rounded img-style normal"
+            />
+          </div>
+          <div
+            class="img-home col-12 col-md-4 d-flex justify-content-center align-items-center h-fit"
+          >
+            <img
+              src="home/images/sport/DSC07441.webp"
+              alt="Photo 2"
+              class="img-fluid rounded img-style normal"
+            />
+          </div>
+          <div
+            class="img-home col-12 col-md-4 d-flex justify-content-center align-items-center h-fit"
+          >
+            <img
+              src="home/images/sport/DSC07449.webp"
+              alt="Photo 3"
+              class="img-fluid rounded img-style normal"
+            />
+          </div>
+          <div
+            class="img-home col-12 col-md-4 d-flex justify-content-center align-items-center h-fit"
+          >
+            <img
+              src="home/images/sport/DSC07450.webp"
+              alt="Photo 4"
+              class="img-fluid rounded img-style normal"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

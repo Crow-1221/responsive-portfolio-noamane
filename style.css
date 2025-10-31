@@ -32,8 +32,8 @@ body header {
 
 /* designer photo */
 .navbar .logo .photo-designer {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 100px;
 }
 
@@ -157,28 +157,78 @@ body header {
     width: 32%;
     min-width: 30rem;
     height: 50vh;
-    background-color: #e19f26;
+    overflow: hidden;
+    background-size: 100%;
+    background-position: center;
     color: black;
     border: solid 1px black;
     box-shadow: 0px 0px 7px 1px black;
-    transition: 500ms;
+    transition: background-size 600ms ease;
 }
 
 .services a:hover {
-    background-color: black;
+    background-size: 130%;
     color: #e19f26;
-    border: solid 0 black;
+    border: solid 0 #e19f26;
+    box-shadow: 0px 0px 7px 1px #e19f26;
 }
 
 .services a * {
-    font-size: 2rem;
-    scale: 1.4;
+    font-size: 0rem;
     transition: 600ms;
 }
 
 .services a:hover * {
-    scale: 1.7;
+    font-size: 4rem;
 }
+
+/* Services Links Backgrounds Style */
+a.design {
+    background-image: url("home/images/services/2951471.webp");
+}
+
+a.photo {
+    background-image: url("home/images/services/4738.webp");
+}
+
+a.video {
+    background-image: url("home/images/services/2206_w039_n003_255b_p1_255.webp");
+}
+
+/* Design Links Backgrounds Style */
+a.logo {
+    background-image: url("home/images/design/8082114.webp");
+}
+
+a.social-media {
+    background-image: url("home/images/design/312071-P9COAA-428.webp");
+}
+
+a.print {
+    background-image: url("home/images/design/5121953.webp");
+}
+
+/* Photo Links Backgrounds Style */
+a.event {
+    background-image: url("home/images/photo/3998.webp");
+}
+
+a.food {
+    background-image: url("home/images/photo/43589.webp");
+}
+
+a.portrait {
+    background-image: url("home/images/photo/1844.webp");
+}
+
+a.product {
+    background-image: url("home/images/photo/8401852.webp");
+}
+
+a.sport {
+    background-image: url("home/images/photo/757.webp");
+}
+
 
 /* Design Style */
 .designgraphy .design-home img {
@@ -189,9 +239,9 @@ body header {
     Image-Home Style When Get Active*/
 @media (min-width: 769px) {
     .photography .container .img-home.active {
-        position: fixed;
-        top: 52%;
-        left: 50%;
+        position: fixed !important;
+        top: 52% !important;
+        left: 50% !important;
         transform: translate(-50%, -50%);
         width: 70vw;
         height: 90vh;

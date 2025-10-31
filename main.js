@@ -4,16 +4,14 @@ let sidebar = document.querySelector('.sidebar')
 hamburger.addEventListener("click", () => {
     sidebar.classList.toggle("active")
 })
-// Active Link
-// let links = Array.from(document.querySelectorAll('.nav-link'))
-// console.log(links)
-// links.forEach(link => {
-//     link.addEventListener("click", () => {
-//         links.forEach(link => link.classList.remove("active"))
-//         link.classList.add("active")
-//     })
-// })
-
+// Mesonry Script 
+window.addEventListener("load", () => {
+    const grid = document.querySelector('.row');
+    new Masonry(grid, {
+        itemSelector: '.img-home',
+        percentPosition: true
+    });
+})
 // Open Lightbox for images
 let img = document.querySelectorAll('.photography .container img.normal')
 let imgHome = document.querySelectorAll('.photography .container .img-home')
