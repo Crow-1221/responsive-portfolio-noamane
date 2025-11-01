@@ -1,8 +1,9 @@
 // Toggle Sidebar
 let hamburger = document.querySelector('.hamburger')
 let sidebar = document.querySelector('.sidebar')
-hamburger.addEventListener("click", () => {
+hamburger.addEventListener("click", (e) => {
     sidebar.classList.toggle("active")
+    e.currentTarget.classList.toggle("active")
 })
 // Mesonry Script 
 window.addEventListener("load", () => {
