@@ -5,7 +5,7 @@ html {
 
 /* body styles */
 body {
-    background-color: #eee;
+    background: linear-gradient(to right, #e19f26, black);
     overflow-x: hidden;
 }
 
@@ -66,7 +66,7 @@ body header {
     display: none;
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 1rem;
 }
 
 @media (max-width: 769px) {
@@ -86,14 +86,14 @@ body header {
     justify-content: center;
     align-items: center;
     width: 4rem;
-    height: 3rem;
+    height: 2.5rem;
     z-index: 1001;
 }
 
 .hamburger span {
     display: block;
-    width: 100%;
-    height: 0.3rem;
+    width: 80%;
+    height: 0.2rem;
     background-color: black;
     margin: 0.3rem 0;
     border-radius: 5px;
@@ -101,16 +101,17 @@ body header {
 }
 
 .hamburger.active :nth-child(1) {
-    transform: rotate(45deg) translate(0px, 6px);
+    transform: rotate(45deg) translate(0px, 11px);
     background-color: #e19f26;
 }
 
 .hamburger.active :nth-child(2) {
-    display: none;
+    transform: translateX(-100%);
+    width: 0;
 }
 
 .hamburger.active :nth-child(3) {
-    transform: rotate(-45deg) translate(0px, -6px);
+    transform: rotate(-45deg) translate(0px, -11px);
     background-color: #e19f26;
 }
 
@@ -119,13 +120,13 @@ body header {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85);
-    border-radius: 20px 0 0 20px;
+    width: 60%;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px 0 0 10px;
     z-index: 999;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 600ms ease 200ms;
 }
 
 .sidebar.active {
